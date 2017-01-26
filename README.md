@@ -25,7 +25,7 @@ Additional text is printed on screen for verification of script execution.  I.e.
 
 Whats the problem?
 
-Running the program consecutive times, produces different results.  Now call the program and follow the above procedure.  (The listed items numbered 1-5.  I'm including an explanation of their output below.
+Running the program consecutive times, produces different results.  Now call the program and follow the above procedure.  (The listed items numbered 1-5)  I'm including an explanation of their output below.
 
 1: node . => Everything behaves as normal:
   * All text is properly displayed to the screen, and a new data file is created (/data/app-users.json)
