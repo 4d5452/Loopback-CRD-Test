@@ -30,12 +30,16 @@ Running the program consecutive times, produces different results.  Now call the
 1: node . => Everything behaves as normal:
   * All text is properly displayed to the screen, and a new data file is created (/data/app-users.json)
     - Look at app-users.json: ids has incremented to 2, and there is no saved model data.
+    
 2: Ctrl C
+
 3: node . => When calling User.findOne({ where: {username: obj.username}}) is called, a null obj is returned.
   * if(!user){ return cb(); } was added so the program could countinue.
     - Observe the app-users.json:  The results should be similar to before, however...
       * The file contains an incremented id, but there exist an AppUser...
+      
 4: Ctrl C
+
 5: node . => Now we get some familiar output, but it's not what it seems
   * Observe the id properties of the 1st and 2nd objects.
     - The newly created object (obj) has property id with value of 3
